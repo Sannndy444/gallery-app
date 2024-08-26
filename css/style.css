@@ -23,36 +23,54 @@ body {
 /* WWelcome Page */
 .wrapper-welcome {
     display: flex;
-    justify-content: center; 
-    align-items: center;   
-    text-align: center;  
-    height: 100vh;           
-}
-
-.welcome-page {
-    display: flex;
     flex-direction: column;
-    align-items: center;      /* Memusatkan konten di dalam elemen kolom */
-    
-}
-.welcome-page h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--four);
-    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.welcome-page p {
+.wrapper-welcome .main-welcome {
+    text-align: center;
+    width: 35rem;
+    height: 10rem;
+    background-color: var(--four);
+    opacity: 0.8;
+    border-radius: 1rem;
+}
+
+.main-welcome h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    color: var(--prim);
+}
+
+.main-welcome p {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1rem 0 0 0;
     color: var(--four);
 }
 
-.welcome-page a {
+.main-welcome a {
     color: var(--prim);
     text-decoration: none;
 }
 
-.welcome-page a:hover {
-    color: var(--sec);
+.main-welcome a:hover {
+    color: var(--third);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .wrapper-welcome .main-welcome {
+        width: 27rem;
+        height: 9rem;
+    }
+    .main-welcome h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-welcome p {
+        font-size: 1.2rem;
+    }
 }

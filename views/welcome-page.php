@@ -9,9 +9,9 @@
 <body>
 <header>
     <div class="wrapper-welcome">
-        <div class="index-page">
+        <div class="main-welcome">
             <h2>Selamat Datang di Gallery App</h2>
-                <p><a href="views/login.php">Login</a> | <a href="views/signup.php">Signup</a></p>
+            <p><a href="views/login.php">Login</a> | <a href="views/signup.php">Signup</a></p>
         </div>
     </div>
     
